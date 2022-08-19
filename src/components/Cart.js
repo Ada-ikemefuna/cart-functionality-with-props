@@ -12,9 +12,9 @@ const Cart = ({ cartItems, onAdd, onRemove }) => {
                 {cartItems.length === 0 && <p>Cart Is Empty</p>}
             </div>
             {cartItems.map((item) => (
-                <div key={item.id} className="flex_1">
-                    <div className='col_2'>{item.name}</div>
-                    <div className='col_2'>
+                <div key={item.id} className="flex_cart">
+                    <div className="">{item.name}</div>
+                    <div className='btn'>
                         <button onClick={() => onAdd(item)} className="add">
                             +
                         </button>
@@ -22,7 +22,7 @@ const Cart = ({ cartItems, onAdd, onRemove }) => {
                             -
                         </button>
                     </div>
-                    <div className='col_2 text-right'>
+                    <div className='text-right'>
                         {item.qty} &times; ₦{item.price.toFixed(2)}
                     </div>
                 </div>
