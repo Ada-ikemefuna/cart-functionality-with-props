@@ -1,59 +1,95 @@
-.flex_1{
+.flex_1 {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  gap: 3rem;
 }
-.center_flex{
+.center_flex {
   align-items: center;
 }
-a{
+a {
   text-decoration: none;
   padding-left: 10px;
 }
-.navlinks{
+.navlinks {
   margin-left: auto;
 }
-.col_1{
+.col_1 {
   flex: 1;
 }
-.col_2{
+.col_2 {
   flex: 2;
 }
-.block{
+.block {
   padding: 10px;
   background-color: lightgray;
   border-radius: 10px;
   margin: 10px;
 }
-button{
+button {
   width: 100%;
-  background-color: yellow;
-  padding: 5px 8px;
-  border: 1px solid black;
+  background-color: rgb(94, 94, 231);
+  padding: 1rem 2rem;
+  border: none;
   margin-top: 15px;
   cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.2s ease;
 }
-img.small{
-  max-height: 10rem;
-  width: 300px;
+.small {
+  height: auto;
+  width: 100%;
 }
-button.add{
-  background-color: blue;
+
+.small img {
+  width: 100%;
+  height: auto;
+}
+button.add {
+  background-color: rgb(16, 71, 16);
   width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  margin: 3px;
+  color: #ffffff;
+  font-size: 14px;
+
+  padding: 5px 10px;
 }
-button.remove{
-  background-color: red;
+
+button.add:hover {
+  background-color: rgba(16, 71, 16, 0.5);
+}
+button.remove {
+  background-color: rgb(255, 0, 0);
   width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  margin: 3px;
+  color: #ffffff;
+  font-size: 14px;
+
+  padding: 5px 10px;
 }
-button.badge{
+
+button.remove:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+button.badge {
   background-color: red;
   border: none;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   width: 1.5rem;
 }
-.text_right{
+
+button:hover {
+  background-color: rgba(94, 94, 231, 0.5);
+}
+.text_right {
   text-align: right;
 }
